@@ -110,7 +110,8 @@ let pokemonRepository = (function () {
 
           });
         })
-        .catch(function () {
+        .catch(function (e) {
+          console.error(e);
         });
     }
   
@@ -130,8 +131,8 @@ let pokemonRepository = (function () {
           item.types = details.types;
           item.abilities = details.abilities;
         })
-        .catch(function () {
-          
+        .catch(function (e) {
+          console.error(e);
         });
     }
   
